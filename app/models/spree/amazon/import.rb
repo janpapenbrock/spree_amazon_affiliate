@@ -9,7 +9,6 @@ module Spree
     class Import < ActiveRecord::Base
       self.table_name = 'spree_amazon_imports'
 
-      attr_accessible :attachment
       validates_attachment_presence :attachment
       has_attached_file :attachment,
                         :url => '/:class/:id/:style/:basename.:extension',

@@ -7,7 +7,6 @@ module Spree
 
       include ActiveModel::AttributeMethods
       include ActiveModel::Conversion
-      include ActiveModel::MassAssignmentSecurity
       include ActiveModel::Serialization
       include ActiveModel::Validations
 
